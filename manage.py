@@ -5,6 +5,7 @@ from flask_script import Manager
 
 from app.main import create_app, db
 from app.main.model import user
+from app.main.model import blacklist
 from app import blueprint
 
 # this boilerplate code are from https://www.freecodecamp.org/news/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563/

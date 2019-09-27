@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96fd30ca-bf12-47f8-8463-f79824341d40" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/main/controller/auth_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/main/model/blacklist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/main/service/auth_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/main/service/blacklist_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/test/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/test/test_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/test/test_user_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main/controller/user_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/controller/user_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/model/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/model/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main/service/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/service/user_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/test_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/util/dto.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/util/dto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +23,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="hDDEmORM" />
   </component>
   <component name="ProjectId" id="1RGKmmq3gtPweZnNr3ppyGMlbSL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -41,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Python.test">
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flask_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,7 +83,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="flask_basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\tlab\Miniconda3\envs\flask_basic\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="run" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flask_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,7 +117,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
-      <option name="PARAMETERS" value="run" />
+      <option name="PARAMETERS" value="test" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -85,12 +126,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.config" />
       <item itemvalue="Python.manage" />
+      <item itemvalue="Python.config" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
@@ -135,9 +177,9 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/Miniconda3/envs/flask_basic/Lib/site-packages/flask/views.py</url>
-          <line>88</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$USER_HOME$/Miniconda3/envs/flask_basic/Lib/json/__init__.py</url>
+          <line>292</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
