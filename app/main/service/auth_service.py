@@ -49,3 +49,34 @@ class Auth:
                        'status': 'fail',
                        'message': 'try again',
                    }, 500
+
+    @staticmethod
+    def get_logged_in_user(req):
+        auth_token = req.headers.get('Authorization').split(" ")[1]
+        if auth_token:
+            user_id = User.decode_auth_token(auth_token)
+            if not isinstance(user_id, str):
+                user = User.query.filter_by(id=user_id).first()
+                resp = {
+                    'status': 'success',
+                    'data': {
+                        'user_id': user.id,
+                        'email': user.email,
+                        'admin': user.admin,
+                        'registered_on': str(user.registered_on)
+                    }
+                }
+                return resp, 200
+            else:
+                err_msg = user_id
+                resp = {
+                    'status': 'fail',
+                    'message': err_msg
+                }
+                return resp, 401
+        else:
+            resp = {
+                'status': 'fail',
+                'message': 'Provide a valid auth token.'
+            }
+            return resp, 401
