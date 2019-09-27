@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96fd30ca-bf12-47f8-8463-f79824341d40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/main/util/decorator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main/controller/user_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/controller/user_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main/service/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/service/auth_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/test/test_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/util/decorator.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/util/decorator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
