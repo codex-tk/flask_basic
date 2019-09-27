@@ -34,3 +34,5 @@ config_by_name = dict(
 )
 
 key = Config.SECRET_KEY
+
+print(config_by_name)

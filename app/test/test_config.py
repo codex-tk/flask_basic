@@ -1,10 +1,10 @@
-import os, unittest
+import os
 
 from flask import current_app
 from flask_testing import TestCase
 
-from manage import app
 from app.main.config import basedir
+from manage import app
 
 
 class TestDevelopmentConfig(TestCase):
@@ -32,6 +32,7 @@ class TestTestingConfig(TestCase):
         self.assertTrue(
             app.config['SQLALCHEMY_DATABASE_URI'] == 'sqlite:///' + os.path.join(basedir, 'flask_basic_test.db')
         )
+
 
 class TestProductionConfig(TestCase):
     def create_app(self):
